@@ -108,7 +108,9 @@ def function02():
     pyautogui.press('left')   # press the left arrow key
     pyautogui.hotkey('ctrl', 'alt', 't')
     pyautogui.write('text', interval=0.25,)
-    pyautogui.press('enter')'''
+    pyautogui.press('enter')
+    pyautogui.scroll(10)   # scroll up 10 "clicks"
+    pyautogui.scroll(-10)  # scroll down 10 "clicks"'''
 
 print("1 ver localização do mouse")
 print("2 para executar automação")

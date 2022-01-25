@@ -111,7 +111,16 @@ def function02():
     pyautogui.press('enter')
     pyautogui.scroll(10)   # scroll up 10 "clicks"
     pyautogui.scroll(-10)  # scroll down 10 "clicks"
-    pyautogui.click(button='right')  # right-click the mouse'''
+    pyautogui.click(button='right')  # right-click the mouse
+    pyautogui.moveTo(100, 100, 2, pyautogui.easeInQuad)     # start slow, end fast
+    pyautogui.moveTo(100, 100, 2, pyautogui.easeOutQuad)    # start fast, end slow
+    pyautogui.moveTo(100, 100, 2, pyautogui.easeInOutQuad)  # start and end fast, slow in middle
+    pyautogui.moveTo(100, 100, 2, pyautogui.easeInBounce)   # bounce at the end
+    pyautogui.moveTo(100, 100, 2, pyautogui.easeInElastic)  # rubber band at the end
+    pyautogui.dragTo(100, 200, button='left')     # drag mouse to X of 100, Y of 200 while holding down left mouse button
+    pyautogui.dragTo(300, 400, 2, button='left')  # drag mouse to X of 300, Y of 400 over 2 seconds while holding down left mouse button
+    pyautogui.drag(30, 0, 2, button='right')   # drag the mouse left 30 pixels over 2 seconds while hold
+    im2 = pyautogui.screenshot('my_screenshot.png')'''
 
 print("1 ver localização do mouse")
 print("2 para executar automação")
